@@ -43,7 +43,7 @@ export default async function LocaleLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-bg min-h-screen">
+      <body className="bg-bg-subtle min-h-screen">
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
