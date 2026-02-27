@@ -13,13 +13,12 @@ export default function Projects() {
   const projects = (messages.projects as { items: ProjectMessage[] }).items;
 
   return (
-    <section id="projects" className="py-12">
-      <div className="max-w-2xl mx-auto px-6">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-accent mb-8 flex items-center gap-2">
-          <span className="w-8 h-px bg-accent"></span>
+    <section id="projects" className="py-16">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-green mb-8">
           {t("sections.projects")}
         </h2>
-        <div className="space-y-4">
+        <div className="grid gap-4">
           {projects.map((project, i) => {
             const link = project.link;
             const Tag = link ? "a" : "div";
@@ -30,25 +29,28 @@ export default function Projects() {
             return (
               <Tag
                 key={i}
-                className="block bg-bg-card rounded-xl shadow-[0_1px_3px_var(--color-shadow)] p-6 hover:shadow-[0_4px_12px_var(--color-shadow-hover)] transition-all duration-300 group"
+                className="group border border-border rounded-2xl p-6 bg-bg-card hover:border-green/40 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(16,185,129,0.08)] transition-all duration-300"
                 {...linkProps}
               >
-                <h3 className="text-base font-semibold text-text-primary group-hover:text-accent transition-colors">
-                  {project.title}
-                  {link && (
-                    <span className="inline-block ml-2 text-accent opacity-0 group-hover:opacity-100 transition-opacity">
-                      &#8599;
-                    </span>
-                  )}
-                </h3>
-                <p className="text-sm text-text-secondary mt-2 leading-relaxed">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-green shrink-0" />
+                  <h3 className="text-base font-semibold group-hover:text-green transition-colors">
+                    {project.title}
+                    {link && (
+                      <span className="inline-block ml-1.5 text-text-tertiary group-hover:text-green transition-colors">
+                        &#8599;
+                      </span>
+                    )}
+                  </h3>
+                </div>
+                <p className="text-sm text-text-secondary mt-3 leading-relaxed ml-5">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-4">
+                <div className="flex flex-wrap gap-2 mt-4 ml-5">
                   {project.tags.map((tag, tagIdx) => (
                     <span
                       key={tagIdx}
-                      className="text-xs font-medium px-3 py-1 bg-accent-light text-accent rounded-full"
+                      className="text-xs font-medium px-3 py-1 bg-tag-bg text-tag-text rounded-full"
                     >
                       {tag}
                     </span>

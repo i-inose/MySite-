@@ -13,27 +13,24 @@ export default function Certifications() {
     .items;
 
   return (
-    <section id="certifications" className="py-12">
-      <div className="max-w-2xl mx-auto px-6">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-accent mb-8 flex items-center gap-2">
-          <span className="w-8 h-px bg-accent"></span>
+    <section id="certifications" className="py-16 bg-bg-subtle">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-green mb-8">
           {t("sections.certifications")}
         </h2>
         <div className="space-y-4">
           {items.map((item, i) => (
             <div
               key={i}
-              className="bg-bg-card rounded-xl shadow-[0_1px_3px_var(--color-shadow)] p-6 flex items-center justify-between gap-4 hover:shadow-[0_4px_12px_var(--color-shadow-hover)] transition-shadow duration-300"
+              className="border border-border rounded-2xl p-6 bg-bg-card flex items-center justify-between gap-4 hover:border-green/40 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(16,185,129,0.08)] transition-all duration-300"
             >
               <div>
-                <h3 className="text-base font-semibold text-text-primary">
-                  {item.name}
-                </h3>
+                <h3 className="text-base font-semibold">{item.name}</h3>
                 <p className="text-sm text-text-secondary mt-0.5">
                   {item.issuer}
                 </p>
               </div>
-              <span className="text-xs font-medium text-text-tertiary bg-tag-bg px-3 py-1 rounded-full whitespace-nowrap">
+              <span className="text-xs text-text-tertiary border border-border rounded-full px-3 py-1 whitespace-nowrap">
                 {item.date}
               </span>
             </div>
