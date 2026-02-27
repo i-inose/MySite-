@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Izuru Inose - Software Engineer",
+    "description": "Portfolio site of Izuru Inose. Working on software engineering and AI agent development."
+  },
+  "header": {
+    "name": "Izuru Inose",
+    "role": "Software Engineer",
+    "location": "Japan",
+    "bio": "Software engineer with a passion for building impactful solutions. Also exploring AI and AI agent development in personal projects, driven by the potential of technology to solve real-world challenges."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certifications": "Certifications"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certifications": "Certifications"
+  },
+  "experience": {
+    "present": "Present",
+    "items": [
+      {
+        "company": "Sample Corp.",
+        "role": "Software Engineer",
+        "period": "Apr 2023 - Present",
+        "description": "Designing and developing web applications. Covering both frontend and backend development."
+      },
+      {
+        "company": "Tech Corp.",
+        "role": "Junior Engineer",
+        "period": "Apr 2021 - Mar 2023",
+        "description": "Development and maintenance of internal systems. Acquired fundamentals of team-based development."
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "title": "AI Agent Platform",
+        "description": "A platform for building and managing AI agents. Implemented autonomous task execution powered by LLMs.",
+        "tags": ["TypeScript", "Python", "LLM", "AI Agent"],
+        "link": ""
+      },
+      {
+        "title": "Portfolio Site",
+        "description": "This site. Built with Next.js + TypeScript, featuring a minimal design inspired by Read.cv.",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
+        "link": ""
+      },
+      {
+        "title": "Task Management App",
+        "description": "A team-oriented task management application with real-time sync and drag-and-drop support.",
+        "tags": ["React", "Node.js", "WebSocket"],
+        "link": ""
+      }
+    ]
+  },
+  "certifications": {
+    "items": [
+      {
+        "name": "AWS Solutions Architect - Associate",
+        "issuer": "Amazon Web Services",
+        "date": "2024"
+      },
+      {
+        "name": "Applied Information Technology Engineer",
+        "issuer": "IPA",
+        "date": "2023"
+      },
+      {
+        "name": "Fundamental Information Technology Engineer",
+        "issuer": "IPA",
+        "date": "2022"
+      }
+    ]
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "switch": "JA"
+  }
+}

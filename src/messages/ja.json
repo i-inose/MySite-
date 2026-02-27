@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "伊野瀬 出 - ソフトウェアエンジニア",
+    "description": "伊野瀬 出のポートフォリオサイト。ソフトウェアエンジニアリングとAIエージェント開発に取り組んでいます。"
+  },
+  "header": {
+    "name": "伊野瀬 出",
+    "role": "ソフトウェアエンジニア",
+    "location": "日本",
+    "bio": "ソフトウェアエンジニアとして活動しています。個人ではAI・AIエージェント開発にも取り組んでおり、技術の力で課題を解決することに情熱を持っています。"
+  },
+  "nav": {
+    "about": "概要",
+    "experience": "職歴",
+    "projects": "プロジェクト",
+    "certifications": "資格"
+  },
+  "sections": {
+    "about": "概要",
+    "experience": "職歴",
+    "projects": "プロジェクト",
+    "certifications": "資格"
+  },
+  "experience": {
+    "present": "現在",
+    "items": [
+      {
+        "company": "サンプル株式会社",
+        "role": "ソフトウェアエンジニア",
+        "period": "2023年4月 - 現在",
+        "description": "Webアプリケーションの設計・開発を担当。フロントエンドからバックエンドまで幅広く対応。"
+      },
+      {
+        "company": "テック株式会社",
+        "role": "ジュニアエンジニア",
+        "period": "2021年4月 - 2023年3月",
+        "description": "社内システムの開発・保守を担当。チーム開発の基礎を習得。"
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "title": "AIエージェントプラットフォーム",
+        "description": "AIエージェントの構築・管理を支援するプラットフォーム。LLMを活用した自律的なタスク実行機能を実装。",
+        "tags": ["TypeScript", "Python", "LLM", "AI Agent"],
+        "link": ""
+      },
+      {
+        "title": "ポートフォリオサイト",
+        "description": "このサイトです。Next.js + TypeScriptで構築し、Read.cvにインスパイアされたミニマルなデザインを採用。",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
+        "link": ""
+      },
+      {
+        "title": "タスク管理アプリ",
+        "description": "チーム向けのタスク管理アプリケーション。リアルタイム同期とドラッグ&ドロップに対応。",
+        "tags": ["React", "Node.js", "WebSocket"],
+        "link": ""
+      }
+    ]
+  },
+  "certifications": {
+    "items": [
+      {
+        "name": "AWS ソリューションアーキテクト - アソシエイト",
+        "issuer": "Amazon Web Services",
+        "date": "2024年"
+      },
+      {
+        "name": "応用情報技術者試験",
+        "issuer": "IPA",
+        "date": "2023年"
+      },
+      {
+        "name": "基本情報技術者試験",
+        "issuer": "IPA",
+        "date": "2022年"
+      }
+    ]
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "switch": "EN"
+  }
+}
